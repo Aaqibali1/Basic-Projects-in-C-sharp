@@ -13,9 +13,9 @@
          Console.WriteLine(num1 % num2);*/
 
 
-        // Build aA MAD Libs Game.
+        // Build A MAD Libs Game.
 
-        string color, pluralNoun, celebrity;
+        /*string color, pluralNoun, celebrity;
 
         Console.Write("Enter a color: ");
         color = Console.ReadLine();
@@ -28,8 +28,20 @@
 
         Console.WriteLine("Roses are " + " " + color);
         Console.WriteLine("I love Celebrity" + " " + celebrity);
-        Console.WriteLine(pluralNoun + " " + "are blue.");
+        Console.WriteLine(pluralNoun + " " + "are blue.");*/
 
+
+        // Return Statement 
+
+        int cubedNumber = cube(5);
+        Console.WriteLine(cubedNumber);
 
     }
+
+    static int cube(int num)
+    {
+        int result = num * num * num;
+        return result;
+    }
 }
+
