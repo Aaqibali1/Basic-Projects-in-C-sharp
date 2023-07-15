@@ -33,15 +33,40 @@
 
         // Return Statement 
 
-        int cubedNumber = cube(5);
-        Console.WriteLine(cubedNumber);
+        /* int cubedNumber = cube(5);
+         Console.WriteLine(cubedNumber);
+ */
+        // Method statement 
 
-    }
-
-    static int cube(int num)
+        /*  static int cube(int num)
     {
         int result = num * num * num;
         return result;
+    }*/
+
+
+        bool isMale = true;
+        bool isTall = false;
+
+        if (isMale && isTall)
+        {
+            Console.WriteLine("You are a Tall male. ");
+        }else if (isMale && !isTall) {
+            Console.WriteLine("You are short male. ");
+        }else if (!isMale && isTall)
+        {
+            Console.WriteLine("You are not male but you are Tall. ");
+        }
+        else
+        {
+            Console.WriteLine("You are not male not  a Tall. ");
+        }
+
+
+
+
+
+
     }
 }
 
