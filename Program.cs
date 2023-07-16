@@ -96,13 +96,64 @@
          }*/
 
 
-        Console.WriteLine(GetDay(0));
+        // Console.WriteLine(GetDay(0));
 
+
+        /*
+                int index = 1;
+                while(index <= 5)
+                {
+                    Console.WriteLine(index);
+                    index++;
+                }*/
+
+        // Building a Guessing Game
+
+
+        /* string secretWord = "Aaqib Ali";
+         string guess = " ";
+
+         while (guess != secretWord)
+         {
+             Console.Write("Enter guess: ");
+             guess = Console.ReadLine();
+
+         }
+         Console.WriteLine("You Win! ");*/
+
+        //More Advance Guessinng Game
+
+        string secretWord = "Aaqib Ali the Coder";
+        string guess = " ";
+        int guessCount = 0;
+        int guessLimit = 5;
+        bool outOfGuesses = false;
+
+        while (guess !=secretWord && !outOfGuesses)
+        {
+            if (guessCount < guessLimit)
+            {
+                Console.Write("Enter a guess: ");
+                guess = Console.ReadLine();
+                guessCount++;
+            }else
+            {
+                outOfGuesses = true;
+
+            }
+        }
+        if (outOfGuesses)
+        {
+            Console.WriteLine("You Lose! ");
+        }else
+        {
+            Console.WriteLine("You Win! ");
+        }
 
 
     }
 
-    static string GetDay(int DayNum)
+    /*static string GetDay(int DayNum)
     {
         string dayName;
 
@@ -135,7 +186,7 @@
         }
 
         return dayName;
-    }
+    }*/
  
        
          
