@@ -63,14 +63,43 @@
          }*/
 
 
-        Console.WriteLine(GetMax(20, 10, 40));
+        /* Console.WriteLine(GetMax(20, 10, 40));*/
 
+
+        Console.Write("Enter a number: ");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter a Operator: ");
+        string op = Console.ReadLine();
+
+        Console.Write("Enter a number: ");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+
+        if (op == "+")
+        {
+            Console.WriteLine(num1 + num2);
+        }
+        else if (op == "-")
+        {
+            Console.WriteLine(num1 - num2);
+        }
+        else if (op == "*")
+        {
+            Console.WriteLine(num1 * num2);
+        }
+        else if (op == "/")
+        {
+            Console.WriteLine(num1 / num2);
+        }else
+        {
+            Console.WriteLine("Invalid operator.");
+        }
 
 
 
     }
 
-    static int GetMax(int num1, int num2, int num3)
+    /*static int GetMax(int num1, int num2, int num3)
     {
         int result;
         if(num1 >= num2 && num1 >= num3)
@@ -84,7 +113,7 @@
             result = num3;
         }
         return result;
-    }
+    }*/
 
 
 
