@@ -162,7 +162,18 @@
         }*/
 
 
-        Console.WriteLine(GetPow(3, 3));
+        //Console.WriteLine(GetPow(3, 3));
+
+
+
+        int[,] numberGrid =
+        {
+            {1, 2 },
+            {3, 4},
+            {5, 6 },
+        };
+
+        Console.WriteLine(numberGrid[2, 1]);
 
         Console.ReadLine();
 
@@ -170,7 +181,7 @@
 
     }
 
-    static int GetPow(int baseNum, int powNum)
+   /* static int GetPow(int baseNum, int powNum)
     {
         int result = 1;
          
@@ -181,7 +192,7 @@
 
 
         return result;
-    }
+    }*/
 
     /*static string GetDay(int DayNum)
     {
