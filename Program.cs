@@ -123,34 +123,64 @@
 
         //More Advance Guessinng Game
 
-        string secretWord = "Aaqib Ali the Coder";
-        string guess = " ";
-        int guessCount = 0;
-        int guessLimit = 5;
-        bool outOfGuesses = false;
+        /* string secretWord = "Aaqib Ali the Coder";
+         string guess = " ";
+         int guessCount = 0;
+         int guessLimit = 5;
+         bool outOfGuesses = false;
 
-        while (guess !=secretWord && !outOfGuesses)
+         while (guess !=secretWord && !outOfGuesses)
+         {
+             if (guessCount < guessLimit)
+             {
+                 Console.Write("Enter a guess: ");
+                 guess = Console.ReadLine();
+                 guessCount++;
+             }else
+             {
+                 outOfGuesses = true;
+
+             }
+         }
+         if (outOfGuesses)
+         {
+             Console.WriteLine("You Lose! ");
+         }else
+         {
+             Console.WriteLine("You Win! ");
+         }*/
+
+
+        /// For Loop program
+
+
+        /*int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };
+         
+        for(int i= 0; i < luckyNumbers.Length; i++)
         {
-            if (guessCount < guessLimit)
-            {
-                Console.Write("Enter a guess: ");
-                guess = Console.ReadLine();
-                guessCount++;
-            }else
-            {
-                outOfGuesses = true;
+            Console.WriteLine(luckyNumbers[i]);
+        }*/
 
-            }
+
+        Console.WriteLine(GetPow(3, 3));
+
+        Console.ReadLine();
+
+
+
+    }
+
+    static int GetPow(int baseNum, int powNum)
+    {
+        int result = 1;
+         
+        for(int i = 0; i < powNum; i++)
+        {
+            result = result * powNum;
         }
-        if (outOfGuesses)
-        {
-            Console.WriteLine("You Lose! ");
-        }else
-        {
-            Console.WriteLine("You Win! ");
-        }
 
 
+        return result;
     }
 
     /*static string GetDay(int DayNum)
